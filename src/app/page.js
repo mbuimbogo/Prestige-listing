@@ -1,4 +1,5 @@
 "use client"
+import Result from '@/components/Result';
 import { useState, useEffect } from 'react';
 
 export default function Home() {
@@ -30,20 +31,7 @@ export default function Home() {
 
   return (
     <div>
-      {properties && properties.length > 0 ? (
-        properties.map((property) => (
-          <div key={property.property_id}>
-             <h1>{property.address.neighborhood_name}</h1>
-            <p>baths: {property.baths}</p>
-            <p>beds: {property.beds}</p>
-            <p>{property.price}</p>
-            <img src={property.thumbnail} alt={property.description} />
-            {/* Add more property details as needed */}
-          </div>
-        ))
-      ) : (
-        <p>Loading property details...</p>
-      )}
+      <Result properties={properties}/>
       
     </div>
   );
