@@ -11,7 +11,7 @@ export default function Header() {
         <img
           src="https://static.rdc.moveaws.com/images/logos/rdc-logo-default.svg"
           alt="Logo"
-          className="h-5 cursor-pointer hidden"
+          className="h-5 cursor-pointer hidden sm:inline-flex"
         />
       </div>
       <div className="flex">
@@ -23,7 +23,7 @@ export default function Header() {
         <DarkModeSwitch />
         <Link href="/about">
           <h2 className="text-2xl">
-            <span className="font-bold bg-red-300 py-1 px-2 rounded-lg mr-4 sm:mr-0">
+            <span className="font-bold bg-red-300 py-1 px-2 rounded-lg mr-0 sm:mr-4">
               Prestige Homes
             </span>
           </h2>
