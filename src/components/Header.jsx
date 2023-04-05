@@ -9,11 +9,14 @@ export default function Header() {
     <div className="bg-gray-200 sticky top-0 z-30">
       <div className="max-w-7xl flex justify-between mx-2 sm:mx-auto items-center py-6">
       <div className="sm:ml-3">
-        <img
+      <Link href="/">
+      <img
           src="https://static.rdc.moveaws.com/images/logos/rdc-logo-default.svg"
           alt="Logo"
           className="h-5 cursor-pointer hidden sm:inline-flex"
         />
+      </Link>
+        
       </div>
       <div className="flex">
         <MenuItem title="HOME" address="/" Icon={AiFillHome} />
@@ -24,7 +27,7 @@ export default function Header() {
         <DarkModeSwitch />
         <Link href="/about">
           <h2 className="text-2xl">
-            <span className="font-bold bg-red-300 py-1 px-2 rounded-lg mr-0 sm:mr-4">
+            <span className="font-bold bg-red-300 py-1 px-2 rounded-lg sm:mr-4 mr-0">
               Prestige Homes
             </span>
           </h2>
