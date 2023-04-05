@@ -30,7 +30,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div>
+    <div className='pb-34'>
       <Result properties={properties}/>
       
     </div>
