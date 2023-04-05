@@ -6,7 +6,8 @@ import MenuItem from "./MenuItem";
 
 export default function Header() {
   return (
-    <div className="flex justify-between mx-2 max-w-7xl sm:mx-auto items-center py-6 bg-gray-200 sticky top-0 z-30">
+    <div className="bg-gray-200 sticky top-0 z-30">
+      <div className="max-w-7xl flex justify-between mx-2 sm:mx-auto items-center py-6">
       <div className="sm:ml-3">
         <img
           src="https://static.rdc.moveaws.com/images/logos/rdc-logo-default.svg"
@@ -28,6 +29,7 @@ export default function Header() {
             </span>
           </h2>
         </Link>
+      </div>
       </div>
     </div>
   );
